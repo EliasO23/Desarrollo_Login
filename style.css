@@ -1,0 +1,130 @@
+/* style.css */
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fondo.jpg'); /* Cambia la URL por la imagen que desees */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Card Header */
+.card-header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Degradado verde profesional */
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Card Body */
+.card-body {
+    padding: 40px;
+}
+
+/* Inputs */
+.form-floating input {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-floating input:focus {
+    border-color: #4CAF50; /* Verde para el foco */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.form-floating label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Button */
+.btn-primary {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Degradado verde profesional */
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff; /* Texto blanco */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50); /* Invertir el degradado al pasar el mouse */
+}
+
+/* Checkbox */
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+/* Extra */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+    color: #4CAF50; /* Verde para enlaces */
+    transition: color 0.3s ease;
+}
+
+.text-decoration-none:hover {
+    color: #2E7D32; /* Verde más oscuro al pasar el mouse */
+}
